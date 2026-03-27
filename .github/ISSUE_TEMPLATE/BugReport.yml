@@ -1,0 +1,56 @@
+name: Bug Report
+description: File a bug report for Accurate Hitboxes
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report an issue! Please provide as much detail as possible to help us investigate.
+  - type: dropdown
+    id: version
+    attributes:
+      label: Minecraft Version
+      options:
+        - 1.20.2
+        - 1.20.1
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Mod Loader
+      options:
+        - Fabric
+        - Quilt
+        - NeoForge
+
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: A clear and concise description of what the bug is.
+      placeholder: "Mod is too perfect."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Explain how to reliably reproduce this bug in-game.
+      placeholder: |
+        1. Spawn a [...]
+        2. Shoot it with [...]
+        3. Observe that [...]
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Game Logs or Crash Reports
+      description: If your game crashed or the console threw an error, please provide the logs. Use [mclo.gs](https://mclo.gs/) or any reliable alternative.
+    validations:
+      required: false
