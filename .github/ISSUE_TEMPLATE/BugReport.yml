@@ -12,6 +12,7 @@ body:
     attributes:
       label: Minecraft Version
       options:
+        - 1.20.3
         - 1.20.2
         - 1.20.1
         - Other
@@ -25,7 +26,6 @@ body:
         - Fabric
         - Quilt
         - NeoForge
-
     validations:
       required: true
   - type: textarea
