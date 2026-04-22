@@ -26,6 +26,7 @@ body:
         - Fabric
         - Quilt
         - NeoForge
+        - Forge
     validations:
       required: true
   - type: textarea
@@ -46,7 +47,7 @@ body:
         2. Shoot it with [...]
         3. Observe that [...]
     validations:
-      required: true
+      required: false
   - type: textarea
     id: logs
     attributes:
